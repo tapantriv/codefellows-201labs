@@ -1,77 +1,86 @@
-//var guestName = guestName.toUpperCase();
+
 var guestName = prompt ('Hi there friend. What is your Name!');
   alert('Nice to meet you ' + guestName);
     console.log('guest name is ' + guestName);
-
-
-//var blind = prompt('Great to meet you ' + guestName + ' are you blind?'); 
-//if(blind.toLowerCase() === 'yes'||blind.toLowerCase() ==='y');{
-  // alert('Sorry you cannot continue ' + guestName);
-  //}
-  //else if(blind.toLowerCase() === 'no'||blind.toLowerCase() ==='n');{
- //   alert('You can ready the next statement');
-//  }
- // else if (blind === '');
-  //{
-    //alert('Sorry not a valid answer');
-  //}
-  //else
-  //{
-  //  alert('Great next questions');
-  //}
   
+//this is the blind question 1
+var blind = prompt('So ' + guestName + ' are you blind?');
 
-  //var hungry = prompt('Next question ' + guestName + ' Are you Hungry?');
-   // if(hungry.toLowerCase() === 'yes'||hungry.toLowerCase() === 'y');{
-      //alert('Sorry to hear that ' + guestName + ' Continue');
-    //}
-    //else if(hungry.toLowerCase() === 'no'||hungry.toLowerCase() === 'n');
-   //{
-     //alert('Awesome ' + guestName + ' moving on');
-   //}
-    //else if (hungry === '');
-  //{
-   // alert('Sorry not a valid answer');
-  //}
- // else
-  //{
-   // alert('Question third');
-  //}
-
-  //var happy = prompt('Third question. ' + guestName + ' Are you Happy today?');
-   // if(happy.toLowerCase() === 'yes'||happy.toLowerCase() === 'y');
-  //{
-    //alert('That is Awesome ' + guestName + ' right on');
-  //}
-  //else if(happy.toLowerCase() === 'no'||happy.toLowerCase() === 'n');
-  //{
-    //alert('Think of Peguins ' + guestName + ' lets continue');
-  //}
-   // else if (happy.toLowerCase() === '');
-    //{
-      //alert('Sorry ' + guestName + ' not a valid answer');
-    //}
-    //else
-    //{
-      //alert('eve of the last question');
-    //}
-
-  var sleep = prompt('Almost there ' + guestName + ' Are you Sleep?');
-
-    if(sleep.toLowerCase() === 'yes'||sleep.toLowerCase() ==='y');{
-      alert('Lets take a Nap ' + guestName + ' WAKE UP...nap is over');
+  if(blind.toLowerCase() === 'yes'||blind.toLowerCase() ==='y'){
+    alert('Sorry you cannot continue ' + guestName)
+      console.log('Answer is ' + blind)
     }
-    else if(sleep.toLowerCase() === 'no'||sleep.toLowerCase() === 'n');{
-      alert('Good job getting your zzzz ' + guestName + ' almost there');
+  else if(blind.toLowerCase() === 'no'||blind.toLowerCase() ==='n'){
+    alert('You can read the next statement')
+      console.log('Answer is ' + blind)
     }
-    else if(sleep === '');{
-      alert('Sorry ' + guestName + ' not a valid answer');
-    }
-    //else();
+  else{
+    alert('Sorry not a valid answer')
+      console.log('Answer is ' + blind)
+  }
+  
+//this is the hungry question 2
+  var hungry = prompt('Next question ' + guestName + ' Are you Hungry?')
+
+    if(hungry.toLowerCase() === 'yes'||hungry.toLowerCase() === 'y'){
+      alert('Sorry to hear that ' + guestName + ' lets eat')
+        console.log('Answer is ' + hungry)
       }
-      //alert('Glad you made it this far' + guestName +);
-    //}      
-    }
-  //prompt('Last question ' + guestName + ' Are you ready to know ME!?');
-//Tapankumar Trivedi helped me on the fist block of if else if else statements
+    else if(hungry.toLowerCase() === 'no'||hungry.toLowerCase() === 'n'){
+      alert('Awesome ' + guestName + ' moving on')
+        console.log('Answer is ' + hungry)
+      }
+    else{
+      alert('Sorry not a valid answer')
+        console.log('Answer is ' + hungry)
+        }
+ 
+//this is the happy question 3
+  var happy = prompt('third question ' + guestName + ' Are you Happy?')
+
+    if(happy.toLowerCase() === 'yes'||happy.toLowerCase() === 'y'){
+      alert('Good for you ' + guestName + ' let\'s Continue')
+        console.log('Answer is ' + happy)
+      }
+    else if(happy.toLowerCase() === 'no'||happy.toLowerCase() === 'n'){
+      alert('Imagine walking Penguins ' + guestName + ' and smile')
+        console.log('Answer is ' + happy)
+          }
+    else{
+      alert('Sorry not a valid answer')
+        console.log('Answer is ' + happy)
+            }
+
+//this is the sleep question 4
+  var sleep = prompt('eve of questioning ' + guestName + ' Are you Sleep?')
+
+    if(sleep.toLowerCase() === 'yes'||sleep.toLowerCase() === 'y'){
+      alert('You need to catch some zzzzz ' + guestName + ' take a nap')
+        console.log('Answer is ' + sleep)
+      }
+    else if(sleep.toLowerCase() === 'no'||sleep.toLowerCase() === 'n'){
+      alert('Good job rest is important ' + guestName + ' bright eyes')
+        console.log('Answer is ' + sleep)
+          }
+    else{
+      alert('Sorry not a valid answer')
+        console.log('Answer is ' + sleep)
+            }
+
+//this is the ready question 5 thinking about using the switch function
+  var ready = prompt('You have patients...last question ' + guestName + ' Are you Ready?')
+
+    if(ready.toLowerCase() === 'yes'||ready.toLowerCase() === 'y'){
+      alert('You are the best ' + guestName + ' You have a great future')
+        console.log('Answer is ' + ready)
+      }
+    else if(ready.toLowerCase() === 'no'||ready.toLowerCase() === 'n'){
+      alert('Awesome ' + guestName + ' moving on')
+        console.log('Answer is ' + ready)
+          }
+    else{
+      alert('Sorry not a valid answer')
+        console.log('Answer is ' + ready)
+            }
+// Tapankumar Trivedi helped me on the fist block of if else if else statements
 
