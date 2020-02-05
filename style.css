@@ -1,0 +1,19 @@
+div {
+  background-color:rgb(241, 217, 231);
+  margin: 0em;
+  padding: 1.2em;
+}
+h1, h2 {
+  font-family: 'cursive', fantasy;
+  color:rgb(112, 138, 131);
+}
+h3 {
+  font-family: 'cursive', fantasy;
+  color: rgb(144, 122, 179);
+}
+p {
+  font-family: 'cursive', fantasy;
+}
+p{
+  font-family: 'sans', sans-serif;
+}
