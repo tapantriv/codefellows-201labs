@@ -128,12 +128,16 @@ function countTeeth(){
 
 //Jesse helped me with this function
 
-for(var i = 6; i>0; i --){
-  var places = ['Baja Sur', 'Germany', 'South Korea', 'Japan', 'United Kingdom', 'United Emerits'];
+var places = ['Baja Sur', 'Germany', 'South Korea', 'Japan', 'United Kingdom', 'United Emerits'];
+function lastQuestion(){
+  
+  for(var i = 6; i>0; i --){
+  
   var answer = prompt ('Guess my top Ten places I like to visit. You will have ' + places.length + ' attempts');
     if (answer == places[0] || answer.toUpperCase() === places[1] || answer.toUpperCase() === places[2] || answer.toUpperCase() === places[3]||answer.toUpperCase() === places[4]||answer == places[5]){
       alert('awesome place');
     break;
     }
 }
-alert('Here is my top ' + places.length + ' Places '  + places.toString())
+alert('Here is my top ' + places.length + ' Places '  + places.toString());
+}
