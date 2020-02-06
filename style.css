@@ -1,19 +1,41 @@
 div {
-  background-color:rgb(241, 217, 231);
+  background-color:rgb(230, 231, 240);
   margin: 0em;
   padding: 1.2em;
+  margin-right: 5em;
+  margin-left: 5em;
+  border-radius: 25px;
 }
-h1, h2 {
+
+h1, h2, h3, p, li, footer {
   font-family: 'cursive', fantasy;
+}
+
+h1, footer {
+  
   color:rgb(112, 138, 131);
+  text-align: center;
 }
+
 h3 {
-  font-family: 'cursive', fantasy;
   color: rgb(144, 122, 179);
 }
-p {
-  font-family: 'cursive', fantasy;
-}
 p{
-  font-family: 'sans', sans-serif;
+  color: rgb(100,100,100);
+}
+
+li{
+  font-family: 'cursive' fantasy;
+  border-style: 1px, solid;
+}
+footer{
+  padding: 5em;
+  background-color: rgb (100,0,200);
+}
+#guestName{
+  text-align:center;
+  font-size: 50px;
+}
+.guest {
+  padding-left:30px;
 }
