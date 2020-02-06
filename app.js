@@ -101,7 +101,8 @@ document.getElementById('ready').innerHTML = ready;
 //this is lab 03 for loop questioning
 alert('Congradulations ' + guestName + ' There is another game. This is a guessing game')
  var myTeeth = 32;
-for(var i = 0; i<4; i++){
+function countTeeth(){
+  for(var i = 0; i<4; i++){
   var teeth = prompt('guess how many teeth I have ' + guestName)
 
   if(teeth == myTeeth){
@@ -121,7 +122,8 @@ for(var i = 0; i<4; i++){
     alert('Must be a number')
       console.log('invalid answer ' + teeth)
   }
-}
+}}
+  countTeeth();
    alert('The right answer is 32. Better Luck Next Time')
 
 //Jesse helped me with this function
