@@ -7,6 +7,8 @@ var guestName = prompt ('Hi there friend. What is your Name!');
 //this is the blind question 1
 var blind = prompt('First Question ' + guestName + '. Are you blind?');
 
+function firstQuestion(){
+
   if(blind.toLowerCase() === 'yes'||blind.toLowerCase() ==='y'){
     alert('Sorry you cannot continue ' + guestName)
       console.log('Answer is ' + blind)
@@ -83,6 +85,8 @@ var blind = prompt('First Question ' + guestName + '. Are you blind?');
       alert('Sorry not a valid answer')
         console.log('Answer is ' + ready)
             }
+          }
+firstQuestion();
 document.getElementById('guestName').innerHTML = guestName;
 document.getElementById('blind').innerHTML = blind;
 document.getElementById('hungry').innerHTML = hungry;
@@ -141,3 +145,4 @@ function lastQuestion(){
 }
 alert('Here is my top ' + places.length + ' Places '  + places.toString());
 }
+lastQuestion();
