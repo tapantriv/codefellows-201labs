@@ -7,8 +7,6 @@ var guestName = prompt ('Hi there friend. What is your Name!');
 //this is the blind question 1
 var blind = prompt('First Question ' + guestName + '. Are you blind?');
 
-function firstQuestion(){
-
   if(blind.toLowerCase() === 'yes'||blind.toLowerCase() ==='y'){
     alert('Sorry you cannot continue ' + guestName)
       console.log('Answer is ' + blind)
@@ -85,8 +83,6 @@ function firstQuestion(){
       alert('Sorry not a valid answer')
         console.log('Answer is ' + ready)
             }
-          }
-firstQuestion();
 document.getElementById('guestName').innerHTML = guestName;
 document.getElementById('blind').innerHTML = blind;
 document.getElementById('hungry').innerHTML = hungry;
@@ -105,8 +101,7 @@ document.getElementById('ready').innerHTML = ready;
 //this is lab 03 for loop questioning
 alert('Congradulations ' + guestName + ' There is another game. This is a guessing game')
  var myTeeth = 32;
-function countTeeth(){
-  for(var i = 0; i<4; i++){
+for(var i = 0; i<4; i++){
   var teeth = prompt('guess how many teeth I have ' + guestName)
 
   if(teeth == myTeeth){
@@ -126,23 +121,22 @@ function countTeeth(){
     alert('Must be a number')
       console.log('invalid answer ' + teeth)
   }
-}}
-  countTeeth();
+}
    alert('The right answer is 32. Better Luck Next Time')
 
 //Jesse helped me with this function
 
 var places = ['Baja Sur', 'Germany', 'South Korea', 'Japan', 'United Kingdom', 'United Emerits'];
-function lastQuestion(){
+function lastQuestion () {
   
   for(var i = 6; i>0; i --){
   
   var answer = prompt ('Guess my top Ten places I like to visit. You will have ' + places.length + ' attempts');
-    if (answer == places[0] || answer.toUpperCase() === places[1] || answer.toUpperCase() === places[2] || answer.toUpperCase() === places[3]||answer.toUpperCase() === places[4]||answer == places[5]){
+    if (answer == places[0] || answer === places[1] || answer === places[2] || answer === places[3]||answer === places[4]||answer == places[5]){
       alert('awesome place');
     break;
     }
 }
-alert('Here is my top ' + places.length + ' Places '  + places.toString());
+alert('Here is my top ' + places.length + ' Places '  + places.toString())
 }
-lastQuestion();
+lastQuestion ();
