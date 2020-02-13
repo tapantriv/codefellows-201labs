@@ -1,0 +1,51 @@
+body {
+  height: auto;
+  width: auto; 
+}
+img {
+
+  f
+
+}
+#pictureBackGround {
+  position:;
+}
+#text{   /*div container for the body of text*/
+  position: cd absolute;
+  top: 10%;
+  left: 50%;
+  transform: tranposlate (-50%, -50%);
+}
+
+h1, h2, h3, p, li, footer {
+  font-family: 'cursive', fantasy;
+}
+
+h1, footer {
+  
+  color:rgb(112, 138, 131);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(144, 122, 179);
+}
+p{
+  color: rgb(100,100,100);
+}
+
+li{
+  font-family: 'cursive' fantasy;
+  border-style: 1px, solid;
+}
+footer{
+  padding: 5em;
+  background-color: rgb (100,0,200);
+}
+#guestName{
+  text-align:center;
+  font-size: 50px;
+}
+.guest {
+  padding-left:30px;
+}
