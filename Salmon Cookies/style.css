@@ -1,0 +1,93 @@
+body{
+  background-color: rgb(199, 199, 221);
+}
+nav{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(230, 128, 114);
+
+}
+
+/*navbar information came from here   https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black*/
+/*#navbox{
+
+}*/
+#navul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;*/
+  overflow: hidden;
+  background-color: rgb (0,0,100);
+}
+
+#navil{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: rgb(90,90,90);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(200,90,90);
+}
+img{
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  ;
+}
+
+#companymascot{
+  display: block;
+  width: 400px;
+
+}
+div{
+  height: 200px;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/*index div ids */
+/*#visitorcontent, #storeinformation, #storelocations{
+
+}*/
+#visitorcontent{
+  /*display: inline;*/
+  /*position: absolute;*/
+  background-color: rgb(260, 100,223);
+  margin-top: 52px;
+  height: ;
+}
+.storeinformation{
+  /*display: inline;*/
+  /*position: absolute;*/
+  background-color: rgb(199, 199, 221);
+  margin-top: 350px;
+
+}
+.storelocations{
+  /*display: inline;*/
+  /*position: absolute;*/
+  background-color: rgb(90, 120, 203);
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 0, 223);
+}
+footer{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(230, 128, 114);
+}
+#footerbox{
+  
+}

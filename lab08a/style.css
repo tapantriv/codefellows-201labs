@@ -5,18 +5,34 @@
     height: 2000px;
     /*background-color: rgb(240,255,200);*/
   }
+  p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start:0;
+    margin-inline-end:0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+    
+  }
 /* got the nav bar here  html information for nav bars found here https://www.w3schools.com/css/css_navbar.asp*/
   header {
     width: 100%;
+    background-color: rgb(59, 64, 57);
   }
 
   nav{
-    background-color: rgb(59, 64, 57);
+    float: none;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    
   }
 
   header nav ul li{
     list-style-type: none;
-    padding: 10px;
+    padding: 1px;
     
   }
 
@@ -26,11 +42,11 @@
 
  
   ul{
+    vertical-align: center;
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: rgb();
   }
 
   li{
@@ -62,21 +78,27 @@
     height: 2000px;
     background-color: rgb(70, 235, 223) ;
   }
-  main div #topcontent{
+  main div section{
     background-color: rgb(224, 230, 184);
     width: 100%;
     height: 920px;
   }
-  main div img #hero{
+  main div img {
     width: 960px;
     height: 450px;
-  }
-  
-  main div img #bannerleft{
     background-color: rgb(125, 134, 219);
-    width: 300px;
-    height: 375px;
-    padding: 0 auto;
+  }
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  footer{
+    background-color: rgb(59, 64, 57);
+    width: 100%;
+    height: 300px;
+  }
+  /*main div img #bannerleft{
+    
 
   }
 
@@ -95,17 +117,18 @@
   }
 
   main div img #bottomleft{
-    background-color: rgb(125, 134, 21);
-    width: 300px;
+    position:absolute ;
+    display: inline-block;
+    width: calc(50% );
     height: 375px;
-    padding: 0 auto;
   }
 
-  main div p #bottomleft{
-    background-color: rgb(125, 134, 21);
+  main div span.bottomright{
+    position: absolute;
+    text-align: justify;
+    display: inline-block;
     width: 300px;
     height: 375px;
-    padding: 0 auto;
-  }
+    
+  }*/
 
-  
