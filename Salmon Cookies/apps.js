@@ -58,12 +58,12 @@ var lima = {
 }
 
 //calculates the numbers given and produces a random number. the math part is a built infunction in JS
-function randomNumberGenerator (minCustomer, maxCustomer){
+function randomNumberGenerator (min, max){
 
-  minCustomer = Math.ceil(minCustomer);
-  maxCustomer = Math.ceil(maxCustomer);
+  // minCustomer = Math.floor(minCustomer);
+  // maxCustomer = Math.ceil(maxCustomer);
 
-  return Math.floor(Math.random() * (maxCustomer - minCustomer))+minCustomer;
+  return Math.floor(Math.random() * (maxCustomer - minCustomer)+minCustomer);
 }
 randomNumberGenerator(seattle);
 randomNumberGenerator(tokyo);
@@ -75,23 +75,23 @@ randomNumberGenerator(lima);
 for (var i =0; i<hours.length; i++){
 //seattle
   var seattleNum = randomNumberGenerator(seattle.minCustomer,seattle.maxCustomer);
-  var seattleCalculation = seattleNum * seattle.averageCookies;
+  var seattleCalculation = Math.floor(seattleNum * seattle.averageCookies);
   seattleArray.push(seattleCalculation);
 //tokyo
   var tokyoNum = randomNumberGenerator(tokyo.minCustomer,tokyo.maxCustomer);
-  var tokyoCalculation = tokyoNum * tokyo.averageCookies;
+  var tokyoCalculation = Math.floor(tokyoNum * tokyo.averageCookies);
   tokyoArray.push(tokyoCalculation);
 //dubai
   var dubaiNum = randomNumberGenerator(dubai.minCustomer,dubai.maxCustomer);
-  var dubaiCalculation = dubaiNum * dubai.averageCookies;
+  var dubaiCalculation = Math.floor(dubaiNum * dubai.averageCookies);
   dubaiArray.push(dubaiCalculation);
   //paris
   var parisNum = randomNumberGenerator(paris.minCustomer,paris.maxCustomer);
-  var parisCalculation = parisNum * paris.averageCookies;
+  var parisCalculation = Math.floor(parisNum * paris.averageCookies);
   parisArray.push(parisCalculation);
   //paris
   var limaNum = randomNumberGenerator(lima.minCustomer,lima.maxCustomer);
-  var limaCalculation = limaNum * lima.averageCookies;
+  var limaCalculation = Math.floor(limaNum * lima.averageCookies);
   limaArray.push(limaCalculation);
   
 
