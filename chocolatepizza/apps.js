@@ -1,4 +1,5 @@
 var userInput=[];
+
 function Chocolate(one, two, three, four, five, six, seven, eight,nine,ten, eleven, twelve )
 {
     this.one= one;
@@ -31,21 +32,45 @@ function handleform(event)
     var ten = event.target.ten.value;
     var eleven = event.target.eleven.value;
     var twelve = event.target.twelve.value;
+
     var chocolate= new Chocolate (one, two, three, four, five, six, seven, eight,nine,ten, eleven, twelve )
-    userInput.push(chocolate);
 
-   
-    for(var i=0;i<userInput.length;i++)
-    {
-        console.log(userInput[i])
+    var radioArray= [
+        event.target.one.checked, 
+        event.target.two.checked, 
+        event.target.three.checked, 
+        event.target.four.checked, 
+        event.target.five.checked, 
+        event.target.six.checked, 
+        event.target.seven.checked,
+        event.target.eight.checked,
+        event.target.nine.checked,
+        event.target.ten.checked,
+        event.target.eleven.checked,
+        event.target.twelve.checked
+    ]
+
+    // console.log('CHECKED?', radioArray[0]);
+        for (var i=0; i<radioArray.length; i++)
+        {
+            if(radioArray[i] == true)
+            {
+             ;
+                userInput.push(chocolate);
+            
+                 console.log(userInput);
+             }
+       
         
+        }
 
-    }
+  
        
     
     
 
 }
+
 var myData=document.getElementById('form');
-myData.addEventListener('submit',handleform);
-handleform();
+myData.addEventListener('submit', handleform);
+
